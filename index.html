@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+  <script>
+
+let a01 = [520,530,1314,2013,2014];
+let sum = 0;
+for(let num of a01){
+	console.log(`current number = ${num}`);
+	/*
+    current number = 520
+	current number = 530
+	current number = 1314
+	current number = 2013
+	current number = 2014
+	*/
+}
+
+let greeting = 'Hello';
+for(let c of greeting){
+	console.log(c)
+	/*
+    H
+    e
+    l
+    l
+    o
+	*/
+}
+
+function display(...args) {
+	for(let arg of args){
+      console.log(arg)
+      /*
+      what
+      when
+      where
+      which
+      who
+      */
+	}
+	for(let arg of arguments){
+		console.log(arg)
+      /*
+      what
+      when
+      where
+      which
+      who
+      */
+	}
+}
+display('what','when','where','which','who')
+
+  </script>
+</body>
+</html>
